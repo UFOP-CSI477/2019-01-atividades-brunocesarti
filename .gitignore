@@ -1,2 +1,3 @@
 # Ignorar todos os diretórios e arquivos em um diretório.
 CSI477-Sistemas-Web-master/**/*
+bootstrap-4.2.1-dist/**/*
