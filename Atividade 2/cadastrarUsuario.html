@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+<form method="post" action="validar.html\">
+            <h1>Cadastro de Usuário</h1>
+
+            <label for="nome">Nome: </label><input type="text" name="nome" id="nome" placeholder="Nome da pessoa"><br><br>
+            <label for="endereco">Endereço: </label><input type="text" name="endereco" id="endereco" placeholder="Nome da rua"><br><br>
+            <label for="telefone">Telefone: </label><input type="text" name="telefone" id="telefone" placeholder="Utilize o formato (31) 9 9999-9999"><br><br>
+
+            <label>Gênero</label><br><br>
+
+            <input type="radio" id="masculino" name="genero" value="M">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="genero" value="F">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="naobinario" name="genero" value="NB">
+            <label for="naobinario">Não Binário</label>
+            <br><br>
+            <label for="Cidade">Cidade: </label>
+            <select name="Cidade">
+                <option value="0">Selecione:</option>
+                <option value="653">Alvinópolis</option>
+                <option value="56">João Monlevade</option>
+                <option value="47">Rio Piracicaba</option>
+                <option value="1">Belo Horizonte</option>
+                <option value="64">Itabira</option>
+                <option value="638">Itaúna</option>
+            </select>
+
+            <br><br>
+
+            <label for="usuario">Usuario: </label>
+            <input type="text" name="usuario"><br><br>
+
+            <label for="email1">E-mail: </label>
+            <input type="text" name="email1"><br><br>
+
+            <label for="email2">Confirmar e-mail: </label>
+            <input type="text" name="email2"><br><br>
+
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha">
+            <br><br>
+
+             <label for="senha2">Confirmar Senha: </label>
+            <input type="password" name="senha2">
+            <br><br>
+
+            <input type="submit" value="Cadastrar" name="cadastro">
+            <input type="reset" value ="Limpar"><br>
+             <a href="./home.html" target="_blank"><h2>Voltar</h2></a>
+</form>
+</body>
+</html>

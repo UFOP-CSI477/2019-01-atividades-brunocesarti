@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Lançamento de Venda</title>
+        <link rel="stylesheet" href="forms.css">
+    </head>
+    <body>
+        <div>
+            <h1>Lançamento de Venda</h1>
+        </div>
+        <form method="post" action="validar.html\">
+            <label for="codigoprod">Código do(s) Produto(s): </label><input type="text" name="codigoprod" id="codigoprod" placeholder="Informe o Código do Produto"><br><br>
+            <label for="nome">Descrição da Venda: </label><br><textarea type="text" name="descprod" id="descprod" rows="5" cols="33">Entre com a descrição da venda...</textarea><br><br>
+             <label for="codigocliente">Codigo Cliente: </label><input type="text" name="codigocliente" id="codigocliente" placeholder="Informe o Código do Cliente"><br><br>
+            <label for="telefone">Telefone do cliente: </label><input type="text" name="telefone" id="telefone" placeholder="Utilize o formato (31) 9 9999-9999"><br><br>
+
+            <label>Entregar na casa do cliente: </label><br><br>
+
+            <input type="radio" id="sim" name="entrega" value="S">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="entrega" value="N">
+            <label for="nao">Não. Retirado pelo próprio cliente</label>
+            <br><br>
+            <label for="Cidade">Cidade</label>
+            <select name="Cidade">
+                <option value="0">Selecione:</option>
+                <option value="653">Alvinópolis</option>
+                <option value="56">João Monlevade</option>
+                <option value="47">Rio Piracicaba</option>
+                <option value="1">Belo Horizonte</option>
+                <option value="64">Itabira</option>
+                <option value="638">Itaúna</option>
+            </select>
+            <br><br>
+            <label for="endereco">Endereço: </label><input type="text" name="endereco" id="endereco" placeholder="Nome da rua"><br><br>
+
+            <input type="submit" value="Concluir venda" name="venda">
+            <input type="reset" value ="Limpar"><br>
+             <a href="./home.html" target="_blank"><h2>Voltar</h2></a>
+
+
+        </form>
+    </body>
+</html>

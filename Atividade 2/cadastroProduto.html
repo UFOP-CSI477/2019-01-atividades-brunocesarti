@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de Produtos</title>
+        <link rel="stylesheet" href="forms.css">
+    </head>
+    <body>
+        <div>
+            <h1>Cadastro do Produto</h1>
+        </div>
+        <form method="post" action="validar.html\">
+        <label for = "produto">Produto: </label><input type="text" name="produto" placeholder="Nome do Produto"><br><br>
+        <label for = "preco">Preço: </label><input type="text" name="preco" placeholder="Preço do Produto"><br><br>
+
+            <label>Categoria:</label><br><br>
+
+            <input type="radio" id="bebidaquente" name="categoria" value="BQ">
+            <label for="bebidaquente">Bebidas Quentes</label>
+            <input type="radio" id="bebidafria" name="categoria" value="BF">
+            <label for="bebidafria">Bebidas Fias</label>
+            <input type="radio" id="salgados" name="categoria" value="S">
+            <label for="salgados">Salgados</label>
+            <input type="radio" id="doces" name="categoria" value="D">
+            <label for="doces">Doces</label>
+            <input type="radio" id="bolos" name="categoria" value="B">
+            <label for="bolos">Bolos</label>
+            <label for = "codFornecedor">
+            <br><br>
+            Código do Fornecedor: </label><input type="text" name="codFornecedor" placeholder="Código do Fornecedor"><br><br>
+
+            <br><br>
+            <input type="submit" value="Cadastrar" name="cadastro">
+            <input type="reset" value ="Limpar"><br>
+             <a href="./home.html" target="_blank"><h2>Voltar</h2></a>
+
+
+        </form>
+    </body>
+</html>
