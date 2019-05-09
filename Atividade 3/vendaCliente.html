@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Lançamento de Venda</title>
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1 align="center">Lançamento de Venda</h1>
+        </div>
+        <form method="post" action="validar.html\">
+            <label for="codigoprod">Código do(s) Produto(s): </label><input type="text" name="codigoprod" id="codigoprod" placeholder="Informe o Código do Produto" class="form-control form-control-lg">
+            <br>
+            <label for="nome">Descrição da Venda: </label><br><textarea type="text" name="descprod" id="descprod" rows="5" cols="33" class="form-control form-control-lg">Entre com a descrição da venda...</textarea>
+            <br>
+            <label for="codigocliente">Codigo Cliente: </label><input type="text" name="codigocliente" id="codigocliente" placeholder="Informe o Código do Cliente" class="form-control form-control-lg">
+            <br>
+            <label for="telefone">Telefone do cliente: </label><input type="text" name="telefone" id="telefone" placeholder="Utilize o formato (31) 9 9999-9999" class="form-control form-control-lg">
+            <br>
+            <div class="form-group">
+                    <label>Entrega do Produto: </label>
+                <div class="form-group form-check">
+                    <input type="radio" id="sim" name="entrega" value="S">
+                    <label for="sim">Sim. Entregar na casa do Cliente</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="radio" id="nao" name="entrega" value="N">
+                    <label for="nao">Não. Retirado pelo próprio cliente</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="cidade">Cidade de origem:</label>
+                <select name="cidade" id="cidade" class="custom-select">
+                    <option value="0">Selecione:</option>
+                    <option value="653">Alvinópolis</option>
+                    <option value="56">João Monlevade</option>
+                    <option value="47">Rio Piracicaba</option>
+                    <option value="1">Belo Horizonte</option>
+                    <option value="64">Itabira</option>
+                    <option value="638">Itaúna</option>
+                </select>
+            </div>
+
+            <label for="endereco">Endereço: </label><input type="text" name="endereco" id="endereco" placeholder="Nome da rua" class="form-control form-control-lg"><br><br>
+
+            <input type="submit" value="Concluir Venda" name="cadastro" class="btn btn-primary">
+            <input type="reset" value ="Limpar" class="btn btn-danger">
+            <a class="btn btn-success" href="./home.html" target="_blank" role="button">Home</
+
+        </form>
+    </body>
+</html>

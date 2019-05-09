@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de Produtos</title>
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1 align="center">Cadastro do Produto</h1>
+        </div>
+        <form method="post" action="validar.html\">
+        <label for = "produto">Produto: </label><input type="text" name="produto" placeholder="Nome do Produto" class="form-control form-control-lg">
+        <label for = "preco">Preço: </label><input type="text" name="preco" placeholder="Preço do Produto" class="form-control form-control-lg">
+<br>
+        <div class="form-group">
+            <label>Categoria:</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="radio" id="bebidaquente" name="categoria" value="BQ">
+            <label for="bebidaquente">Bebidas Quentes</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="radio" id="bebidafria" name="categoria" value="BF">
+            <label for="bebidafria">Bebidas Fias</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="radio" id="salgados" name="categoria" value="S">
+            <label for="salgados">Salgados</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="radio" id="doces" name="categoria" value="D">
+            <label for="doces">Doces</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="radio" id="bolos" name="categoria" value="B">
+            <label for="bolos">Bolos</label>
+        </div>
+            <label for = "codFornecedor">
+            Código do Fornecedor:</label><input type="text" name="codFornecedor" placeholder="Código do Fornecedor" class="form-control form-control-lg">
+<br>
+            <input type="submit" value="Cadastrar" name="cadastro" class="btn btn-primary">
+            <input type="reset" value ="Limpar" class="btn btn-danger">
+            <a class="btn btn-success" href="./home.html" target="_blank" role="button">Home</a>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro do fornecedor</title>
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1 align="center">Cadastro do fornecedor</h1>
+        </div>
+        <form method="post" action="validar.html\">
+
+
+            <div class="form-group">
+                <label for="nomeemp">Nome da Empresa: </label><input type="text" name="nomeem" id="nomeemp" placeholder="Nome da empresa" class="form-control form-control-lg">
+            </div>
+            <div class="form-group">
+                <label for="nomeresp">Nome do Responsável: </label><input type="text" name="nomeresp" id="nomeresp" placeholder="Nome da pessoa" class="form-control form-control-lg">
+            </div>
+            <div class="form-group">
+                <label for="cnpj">CNPJ: </label><input type="text" name="cnpj" id="cnpj" placeholder="CNPJ" class="form-control form-control-lg">
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço: </label><input type="text" name="endereco" id="endereco" placeholder="Nome da rua" class="form-control form-control-lg">
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone: </label><input type="text" name="telefone" id="telefone" placeholder="Utilize o formato (31) 9 9999-9999" class="form-control form-control-lg">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail: </label><input type="text" name="email" id="email" placeholder="E-mail" class="form-control form-control-lg">
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade de origem</label>
+                <select name="cidade" id="cidade" class="custom-select">
+                    <option value="0">Selecione:</option>
+                    <option value="653">Alvinópolis</option>
+                    <option value="56">João Monlevade</option>
+                    <option value="47">Rio Piracicaba</option>
+                    <option value="1">Belo Horizonte</option>
+                    <option value="64">Itabira</option>
+                    <option value="638">Itaúna</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Cadastrar" name="cadastro" class="btn btn-primary">
+            <input type="reset" value ="Limpar" class="btn btn-danger">
+            <a class="btn btn-success" href="./home.html" target="_blank" role="button">Home</a>
+
+
+        </form>
+    </body>
+</html>
