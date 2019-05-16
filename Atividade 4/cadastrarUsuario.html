@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <form method="post" name="cadastarUsuario">
+                <div class="jumbotron">
+                    <h1 align="center">Cadastro de Usuário</h1>
+                </div>
+
+                <label for="nome">Nome: </label><input type="text" name="nome" id="nome" placeholder="Nome da pessoa" class="form-control form-control-lg">
+                <label for="endereco">Endereço: </label><input type="text" name="endereco" id="endereco" placeholder="Nome da rua" class="form-control form-control-lg">
+                <label for="telefone">Telefone: </label><input type="text" name="telefone" id="telefone" placeholder="Utilize o formato (31) 9 9999-9999" class="form-control form-control-lg">
+        <div class="form-group">
+                <label>Gênero:</label>
+        </div>
+        <div class="form-group form-check">
+                <input type="radio" id="masculino" name="genero" value="M">
+                <label for="masculino">Masculino</label>
+        </div>
+        <div class="form-group form-check">
+                <input type="radio" id="feminino" name="genero" value="F">
+                <label for="feminino">Feminino</label>
+        </div>
+        <div class="form-group form-check">
+                <input type="radio" id="naobinario" name="genero" value="NB">
+                <label for="naobinario">Não Binário</label>
+        </div>
+        <div class="form-group">
+            <label for="cidade">Cidade de origem</label>
+            <select name="cidade" id="cidade" class="custom-select">
+                <option value="0">Selecione:</option>
+                <option value="653">Alvinópolis</option>
+                <option value="56">João Monlevade</option>
+                <option value="47">Rio Piracicaba</option>
+                <option value="1">Belo Horizonte</option>
+                <option value="64">Itabira</option>
+                <option value="638">Itaúna</option>
+            </select>
+        </div>
+
+                <label for="usuario">Usuario: </label>
+                <input type="text" name="usuario" class="form-control form-control-lg">
+
+                <label for="email1">E-mail: </label>
+                <input type="text" name="email1" class="form-control form-control-lg">
+
+                <label for="email2">Confirmar e-mail: </label>
+                <input type="text" name="email2" class="form-control form-control-lg">
+
+                <label for="senha">Senha: </label>
+                <input type="password" name="senha" class="form-control form-control-lg">
+
+                 <label for="senha2">Confirmar Senha: </label>
+                <input type="password" name="senha2" class="form-control form-control-lg">
+
+                <input type="submit" value="Cadastrar" name="cadastro" onclick="validarUsuario()" class="btn btn-primary">
+                <input type="reset" value ="Limpar" class="btn btn-danger">
+                <a class="btn btn-success" href="./home.html" target="_blank" role="button">Home</a>
+    </form>
+    <script src="form.js"></script>
+
+</body>
+</html>
