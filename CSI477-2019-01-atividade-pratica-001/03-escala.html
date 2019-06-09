@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Escala Richter</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <form name="dados">
+      <div class="jumbotron">
+          <h1 align="center"> Calculadora Escala Richter</h1>
+      </div>
+        <div id="grupo1" class="form-group">
+          <label for="amplitude" id="labelv1">Amplitude do terremoto corretamente em (mm)</label>
+          <input type="text" name="amplitude" class="form-control">
+
+          <div id="alerta1" style="display: none" class="alert alert-danger" >
+            <span>Preencha CORRETAMENTE a amplitude do terremoto corretamente em (mm)!<span>
+          </div>
+
+        </div>
+
+        <div id="grupo2" class="form-group">
+          <label for="tempo" id="labelv2">Tempo entre a onda superficial e a onda de pressão máxima em (s)</label>
+          <input type="text" name="tempo" class="form-control">
+
+          <div id="alerta2" style="display: none" class="alert alert-danger" >
+            <span>Preencha CORRETAMENTE o tempo entre a onda superficial e a onda de pressão máxima em (s)!<span>
+          </div>
+
+        </div>
+
+        <button type="button" name="calculoescala" id="calculoescala" class="btn btn-primary">Calcular Escala Richter</button>
+
+       <div class="form-group" style="display: none"  id="resultado" >
+          <label for="resultado"><br>Índice na Escala Richter :</label>
+          <input type="text" class="form-control" name="resultado">
+        </div>
+
+        <div id="1" style="display: none" class="alert alert-success">
+                    Efeito na Escala Richter: <strong>Geralmente não sentido, mas gravado</strong>
+        </div>
+
+        <div id="2" style="display: none" class="alert alert-success">
+                    Efeito na Escala Richter: <strong>Às vezes sentido, mas raramente causa danos</strong>
+        </div>
+
+       <div id="3" style="display: none" class="alert alert-warning">
+                    Efeito na Escala Richter: <strong>No máximo causa pequenos danos a prédios bem construídos, mas pode danificar seriamente casas mal construídas em regiões próximas</strong>
+        </div>
+
+        <div id="4" style="display: none" class="alert alert-danger">
+                    Efeito na Escala Richter: <strong>Pode ser destrutivo em áreas em torno de até 100km do epicentro</strong>
+        </div>
+
+        <div id="5" style="display: none" class="alert alert-danger">
+                    Efeito na Escala Richter: <strong>Gande terremoto. Pode causar sérios danos numa grande faixa</strong>
+        </div>
+
+        <div id="6" style="display: none" class="alert alert-danger">
+                   Efeito na Escala Richter: <strong>Enorme terremoto. Pode causar graves danos em muitas áreas mesmo que estejam a centenas de quilômetros</strong>
+        </div>
+
+    <div style="display:none" id="tabelaer">
+      <br>
+      <table class="table table-striped table-bordered table-hover table-sm" id="tabelaer">
+        <thead class="thead-dark">
+          <tr>
+              <th scope="col">Magnitude Richter</th>
+              <th scope="col">Efeitos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Menor que 3,5</td>
+            <td>Geralmente não sentido, mas gravado</td>
+          </tr>
+          <tr>
+            <td>Entre 3,5 e 5,4</td>
+            <td>Às vezes sentido, mas raramente causa danos</td>
+          </tr>
+          <tr>
+            <td>Entre 5,5 e 6,0</td>
+            <td>No máximo causa pequenos danos a prédios bem construídos, mas pode danificar seriamente casas mal construídas em regiões próximas</td>
+          </tr>
+          <tr>
+            <td>Entre 6,1 e 6,9</td>
+            <td>Pode ser destrutivo em áreas em torno de até 100km do epicentro</th>
+          </tr>
+          <tr>
+            <td>Entre 7,0 e 7,9</td>
+            <td>Gande terremoto. Pode causar sérios danos numa grande faixa</td>
+          </tr>
+          <tr>
+            <td>8,0 ou mais</td>
+            <td>Enorme terremoto. Pode causar graves danos em muitas áreas mesmo que estejam a centenas de quilômetros</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </form>
+</div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="form03.js"></script>
+
+  </body>
+</html>

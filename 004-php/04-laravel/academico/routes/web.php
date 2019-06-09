@@ -11,6 +11,29 @@
 |
 */
 
+/*
+Route::get('/', function(){
+    $nome = "Bruno";
+    $usuario = "bruno";
+
+    $alunos = ['Ana','Brígida','Pedro','Ricardo'];
+
+
+    return view('principal')
+                ->with('nome', $nome)
+                ->with('user', $usuario)
+                ->with('alunos', $alunos);
+});
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
+*/
+
+Route::get('/', 'PaginasController@index');
+
+Route::get('/welcome','PaginasController@about');
+
+Route::get('/alunos/listar','PaginasController@listar');
+
+Route::resource('/estados', 'EstadoController');

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IMC</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <form name="dados">
+      <div class="jumbotron">
+          <h1 align="center"> Calculadora IMC</h1>
+        </div>
+
+        <div id="grupo1" class="form-group">
+          <label for="peso" id="labelv1">Peso (kg)</label>
+          <input type="text" name="peso" class="form-control">
+
+          <div id="alerta1" style="display: none" class="alert alert-danger" >
+            <span>Preencha o seu peso corretamente em kg!<span>
+          </div>
+
+        </div>
+
+        <div id="grupo2" class="form-group">
+          <label for="altura" id="labelv2">Altura (metros - utilze ponto como separador)</label>
+          <input type="text" name="altura" class="form-control">
+
+          <div id="alerta2" style="display: none" class="alert alert-danger" >
+            <span>Preencha a sua altura corretamente em cm!<span>
+          </div>
+
+        </div>
+
+        <button type="button" name="calculoimc" id="calculoimc" class="btn btn-primary">Calcular IMC</button>
+
+       <div class="form-group" style="display: none"  id="resultado" >
+          <label for="resultado"><br>Seu IMC é :</label>
+          <input type="text" class="form-control" name="resultado">
+        </div>
+
+        <div id="1" style="display: none" class="alert alert-warning">
+          Segundo seu IMC, sua classificação é: <b>Subnutrição<b>
+        </div>
+
+        <div id="2" style="display: none" class="alert alert-success">
+          Segundo seu IMC, sua classificação é: <strong>Peso Saudável</strong>
+        </div>
+
+       <div id="3" style="display: none" class="alert alert-warning">
+          Segundo seu IMC, sua classificação é: <strong>Sobrepeso</strong>
+        </div>
+
+        <div id="4" style="display: none" class="alert alert-danger">
+          Segundo seu IMC, sua classificação é: <strong>Obesidade grau 1</strong>
+        </div>
+
+        <div id="5" style="display: none" class="alert alert-danger">
+          Segundo seu IMC, sua classificação é: <strong>Obesidade grau 2</strong>
+        </div>
+
+        <div id="6" style="display: none" class="alert alert-danger">
+          Segundo seu IMC, sua classificação é: <strong>Obesidade grau 3</strong>
+        </div>
+
+       <div class="form-group" id="pesoentre" style="display: none" >
+          <label for="pesomin">Para sua altura, seu peso (ideal) deve estar entre:<br>Peso mínimo (kg):</label>
+          <input type="text" class="form-control" name="pesomin">
+          <label for="pesomax">Peso máximo (kg):</label>
+          <input type="text" class="form-control" name="pesomax">
+        </div>
+
+        <div id="tabelaimc" style="display: none" >
+              <br>
+              <table class="table table-striped table-bordered table-hover table-sm" id="tabelaimc">
+                <thead class="thead-dark">
+                  <tr>
+                      <th scope="col">IMC</th>
+                      <th scope="col">Classificação</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Abaixo de 18,5</td>
+                    <td>Subnutrição</td>
+                  </tr>
+                  <tr>
+                    <td>Entre 18,5 e 24,9</td>
+                    <td>Peso Saudável</td>
+                  </tr>
+                  <tr>
+                    <td>Entre 25,0 e 29,9</td>
+                    <td>Sobrepeso</td>
+                  </tr>
+                  <tr>
+                    <td>Entre 30,0 e 34,9</td>
+                    <td>Obesidade grau 1</td>
+                  </tr>
+                  <tr>
+                    <td>Entre 35,0 e 39,9</td>
+                    <td>Obesidade grau 2</td>
+                  </tr>
+                  <tr>
+                    <td>Acima de 40</td>
+                    <td>Obesidade grau 3</td>
+                  </tr>
+                </tbody>
+                </table>
+            </div>
+
+              </form>
+            </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="form02.js"></script>
+
+  </body>
+</html>
