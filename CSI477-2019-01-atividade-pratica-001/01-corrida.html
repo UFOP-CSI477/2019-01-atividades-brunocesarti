@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Corrida</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <form name="dados">
+      <div class="jumbotron">
+          <h1 align="center"> Competição de carrinhos de rolimã</h1>
+        </div>
+
+        <div id="grupo0" class="form-group">
+          <label for="largada" id="labelv0">Posição de largada:</label>
+          <input type="text" name="largada" id="largada" class="form-control">
+
+          <div id="alerta0" style="display: none" class="alert alert-danger" >
+            <span>Informe a posição de largada do competidor!<span>
+          </div>
+
+        </div>
+
+        <div id="grupo1" class="form-group">
+          <label for="competidor" id="labelv1">Competidor:</label>
+          <input type="text" name="competidor" id="competidor" class="form-control">
+
+          <div id="alerta1" style="display: none" class="alert alert-danger" >
+            <span>Informe o nome do competidor!<span>
+          </div>
+
+        </div>
+
+        <div id="grupo2" class="form-group">
+          <label for="tempo" id="labelv2">Tempo:</label>
+          <input type="text" name="tempo" id="tempo" class="form-control">
+
+          <div id="alerta2" style="display: none" class="alert alert-danger" >
+            <span>Informe o tempo do competidor!<span>
+          </div>
+
+        </div>
+
+        <button type="button" name="cadastrar" id="cadastrar" class="btn btn-primary">Cadastrar Competidor</button>
+
+        <div id="tabelalargada" style="display: none">
+            <br>
+                <table class="table table-striped table-bordered table-hover table-sm" id="tabelalargada">
+                  <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Largada</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Tempo</th>
+                    </tr>
+                  </thead>
+                  </table>
+              </div>
+              <br>
+              <div id="classificacao" style="display: none" class="alert alert-success">
+                <span>Classificação dos candidatos:</span>
+              </div>
+        <div id="tabelaordenada" style="display: none">
+            <br>
+              <table class="table table-striped table-bordered table-hover table-sm" id="tabelaordenada">
+                  <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Posição</th>
+                        <th scope="col">Largada</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Tempo</th>
+                        <th scope="col">Resultado</th>
+                    </tr>
+                  </thead>
+              </table>
+        </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="form01.js"></script>
+
+  </body>
